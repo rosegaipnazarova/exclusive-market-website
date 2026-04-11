@@ -5,6 +5,8 @@ import authRoutes from './router/auth.routes.js';
 
 import userRoutes from './router/user.routes.js';
 import cartRoutes from './router/cart.routes.js';
+import contactRoutes from './router/contact.routes.js';
+
 
 import { User } from './model/user.js';
 import { Order } from './model/order.js';
@@ -30,6 +32,8 @@ app.use('/api/auth', authRoutes);
 
 app.use('/api/users', userRoutes);
 app.use('/api/cart', cartRoutes);
+
+app.use('/api/contact', contactRoutes);
 
 const start = async () => {
   try {
